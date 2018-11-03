@@ -9,8 +9,6 @@ const UUID = require("uuid/v4");
 var multer = require("multer");
 var multerS3 = require("multer-s3");
 var path = require("path");
-let multipart = require("connect-multiparty");
-let multipartMiddleware = multipart();
 
 var awsconfig = require("../../aws-config.json");
 const accessKeyId = awsconfig.AWS.accessKeyId;
